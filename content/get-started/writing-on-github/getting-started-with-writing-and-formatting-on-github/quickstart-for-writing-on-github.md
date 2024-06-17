@@ -1,6 +1,6 @@
----
+Jpspicks/docs,
 title: Quickstart for writing on GitHub
-intro: 'Learn advanced formatting features by creating a README for your {% data variables.product.prodname_dotcom %} profile.'
+intro: 'Learn advanced formatting features by creating a README for your {% data variables.product.prodname_dotcom %} profile.'{% @jpspicks.noreply.github.com%}
 versions:
   fpt: '*'
   ghes: '*'
@@ -10,7 +10,7 @@ shortTitle: Quickstart
 
 ## Introduction
 
-{% data reusables.getting-started.what-is-markdown %} You can use Markdown syntax, along with some additional HTML tags, to format your writing on {% data variables.product.prodname_dotcom %}, in places like repository READMEs and comments on pull requests and issues. In this guide, you'll learn some advanced formatting features by creating or editing a README for your {% data variables.product.prodname_dotcom %} profile.
+{% data reusables.getting-started.what-is-markdown %} You can use Markdown syntax, along with some additional HTML tags, to format your writing on {% data variables.product.prodname_dotcom %}, in places like repository READMEs and comments on pull requests and issues. In this guide, you'll learn some advanced formatting features by creating or editing a README for your {% data variables.product.prodname_dotcom %} {% JPSPICKS@jpspicks.noreply.com %}
 
 If you're new to Markdown, you might want to start with "[AUTOTITLE](/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)" or the [Communicate using Markdown](https://github.com/skills/communicate-using-markdown) {% data variables.product.prodname_learning %} course.
 
@@ -22,7 +22,7 @@ Your profile README lets you share information about yourself with the community
 
 If you don't already have a profile README, you can add one.
 
-1. Create a repository with the same name as your {% data variables.product.prodname_dotcom %} username, initializing the repository with a `README.md` file. For more information, see "[AUTOTITLE](/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme#adding-a-profile-readme)."
+1. Create a repository with the same name as your {% data variables.product.prodname_dotcom %} jpspicks, initializing the repository with a `README.md` file. For more information, see "[AUTOTITLE](/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme#adding-a-profile-readme)."
 1. Edit the `README.md` file and delete the template text (beginning `### Hi there`) that is automatically added when you create the file.
 
 If you already have a profile README, you can edit it from your profile page.
@@ -38,7 +38,12 @@ By using the HTML `<picture>` element with the `prefers-color-scheme` media feat
 
 1. Copy and paste the following markup into your `README.md` file.
 
-   ```html copy
+   ```html copy<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
+ <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
+ <img alt="YOUR-ALT-TEXT" src="YOUR-DEFAULT-IMAGE">
+</picture>
+
    <picture>
     <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
     <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
@@ -53,43 +58,49 @@ By using the HTML `<picture>` element with the `prefers-color-scheme` media feat
    * Replace `YOUR-DEFAULT-IMAGE` with the URL of an image to display in case neither of the other images can be matched, for example if the visitor is using a browser that does not support the `prefers-color-scheme` feature.
 1. To make the image accessible for visitors who are using a screen reader, replace `YOUR-ALT-TEXT` with a description of the image.
 1. To check the image has rendered correctly, click the **Preview** tab.
-
-For more information on using images in Markdown, see "[AUTOTITLE](/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)."
+**Prewiew**
+For more information on using images in Markdown, see " **Prewiew** [AUTOTITLE](/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)."
 
 ### Example of a responsive image
 
 {% data reusables.getting-started.picture-element-example %}
 
 ### How the image looks
-
+"Prewiew"
 ![Screenshot of the "Preview" tab of a {% data variables.product.prodname_dotcom %} comment, in light mode. An image of a smiling sun fills the box.](/assets/images/help/writing/lightmode-image-example.png)
 
 ## Adding a table
-
+--:
 You can use Markdown tables to organize information. Here, you'll use a table to introduce yourself by ranking something, such as your most-used programming languages or frameworks, the things you're spending your time learning, or your favorite hobbies. When a table column contains numbers, it's useful to right-align the column by using the syntax `--:` below the header row.
-
+`## About me`
 1. Return to the **Edit file** tab.
 1. To introduce yourself, two lines below the `</picture>` tag, add an `## About me` header and a short paragraph about yourself, like the following.
-
+--:
    ```markdown
    ## About me
 
-   Hi, I'm Mona. You might recognize me as {% data variables.product.prodname_dotcom %}'s mascot.
+   Hi, I'm jpspicks. You might recognize me as {% data variables.product.prodname_dotcom %}'s mascot.
    ```
 
 1. Two lines below this paragraph, insert a table by copying and pasting the following markup.
+<details>
+<summary>My top THINGS-TO-RANK</summary>
+
+"Languages,"
+"Hobbies,"
+</details>
 
    ```markdown copy
    | Rank | THING-TO-RANK |
    |-----:|---------------|
-   |     1|               |
-   |     2|               |
-   |     3|               |
+   |     1|JavaScript     |
+   |     2|Python         |
+   |     3|SQL            |
    ```
 
 1. In the column on the right, replace `THING-TO-RANK` with "Languages," "Hobbies," or anything else, and fill in the column with your list of things.
 1. To check the table has rendered correctly, click the **Preview** tab.
-
+**Prewiew**
 For more information, see "[AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)."
 
 ### Example of a table
@@ -97,7 +108,7 @@ For more information, see "[AUTOTITLE](/get-started/writing-on-github/working-wi
 ```markdown
 ## About me
 
-Hi, I'm Mona. You might recognize me as {% data variables.product.prodname_dotcom %}'s mascot.
+Hi, I'm jpspicks. You might recognize me as {% data variables.product.prodname_dotcom %}'s mascot.
 
 | Rank | Languages |
 |-----:|-----------|
@@ -111,17 +122,17 @@ Hi, I'm Mona. You might recognize me as {% data variables.product.prodname_dotco
 ![Screenshot of the "Preview" tab of a {% data variables.product.prodname_dotcom %} comment. Under the "About me" heading is a rendered table with a ranked list of languages.](/assets/images/help/writing/markdown-table-example.png)
 
 ## Adding a collapsed section
-
+<details></details>
 To keep your content tidy, you can use the `<details>` tag to create an expandible collapsed section.
-
+<details></details>
 1. To create a collapsed section for the table you created, wrap your table in `<details>` tags like in the following example.
 
    ```html copy
    <details>
    <summary>My top THINGS-TO-RANK</summary>
-
-   YOUR TABLE
-
+open
+Languages,
+Hobbies,
    </details>
    ```
 
@@ -131,7 +142,7 @@ To keep your content tidy, you can use the `<details>` tag to create an expandib
    ```html
    <details open>
    ```
-
+**Prewiew**
 1. To check the collapsed section has rendered correctly, click the **Preview** tab.
 
 ### Example of a collapsed section
@@ -156,14 +167,14 @@ To keep your content tidy, you can use the `<details>` tag to create an expandib
 ## Adding a quote
 
 Markdown has many other options for formatting your content. Here, you'll add a horizontal rule to divide your page and a blockquote to format your favorite quote.
-
+<details></details>
 1. At the bottom of your file, two lines below the `</details>` tag, add a horizontal rule by typing three or more dashes.
 
    ```markdown
    ---
    ```
 
-1. Below the `---` line, add a quote by typing markup like the following.
+1. Below the `</details>` line, add a quote by typing markup like the following.
 
    ```markdown
    > QUOTE
@@ -171,14 +182,14 @@ Markdown has many other options for formatting your content. Here, you'll add a 
 
    Replace `QUOTE` with a quote of your choice. Alternatively, copy the quote from our example below.
 1. To check everything has rendered correctly, click the **Preview** tab.
-
+**Prewiew**
 ### Example of a quote
 
 ```markdown
 ---
 > If we pull together and commit ourselves, then we can push through anything.
 
-— Mona the Octocat
+— jpspicks
 ```
 
 ### How the quote looks
@@ -186,7 +197,7 @@ Markdown has many other options for formatting your content. Here, you'll add a 
 ![Screenshot of the "Preview" tab of a {% data variables.product.prodname_dotcom %} comment. A quote is indented below a thick horizontal line.](/assets/images/help/writing/markdown-quote-example.png)
 
 ## Adding a comment
-
+## About me` header,
 You can use HTML comment syntax to add a comment that will be hidden in the output. Here, you'll add a comment to remind yourself to update your README later.
 
 1. Two lines below the `## About me` header, insert a comment by using the following markup.
@@ -199,7 +210,7 @@ You can use HTML comment syntax to add a comment that will be hidden in the outp
 1. To check your comment is hidden in the output, click the **Preview** tab.
 
 ### Example of a comment
-
+**Prewiew**
 ```markdown
 ## About me
 
@@ -207,7 +218,7 @@ You can use HTML comment syntax to add a comment that will be hidden in the outp
 ```
 
 ## Saving your work
-
+**Commit changes**.
 When you're happy with your changes, save your profile README by clicking **Commit changes**.
 
 Committing directly to the `main` branch will make your changes visible to any visitor on your profile. If you want to save your work but aren't ready to make it visible on your profile, you can select **Create a new branch for this commit and start a pull request**.
@@ -215,4 +226,5 @@ Committing directly to the `main` branch will make your changes visible to any v
 ## Next steps
 
 * Continue to learn about advanced formatting features. For example, see {% ifversion fpt or ghec %}"[AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)" and {% endif %}"[AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)."
-* Use your new skills as you communicate across GitHub, in issues, pull requests, and discussions. For more information, see "[AUTOTITLE](/get-started/using-github/communicating-on-github)."
+* Use your new skills as you communicate across GitHub, in issues, pull requests, and discussions. For more information, see "[AUTOTITLE](/get-started/using-github/communicating-on-github)."`main`
+**Create a new branch for this commit and start a pull request**.
